@@ -5,7 +5,7 @@ import Image from 'next/image'
 const MobileImage = () => {
   return (
     <div>
-        <Image src={mobile} height={700} width={700}/>
+        <Image alt='mobile image' src={mobile} height={700} width={700}/>
     </div>
   )
 }

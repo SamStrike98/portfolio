@@ -103,7 +103,7 @@ export default function Home() {
         {/* <div className="text-white bg-black rounded-full w-[200] h-[200]"> Test</div> */}
 
         {/* <div className="border border-black h-[300px] w-[300px] bg-black"> */}
-            <Image src={profilePhoto} width={500} height={500} className="max-w-1/2 bg-gray-800 bg-opacity-45 rounded-lg ring-1 ring-green-600 drop-shadow-glow animate-fade-down animate-once"/>
+            <Image alt="profile image" src={profilePhoto} width={500} height={500} className="max-w-1/2 bg-gray-800 bg-opacity-45 rounded-lg ring-1 ring-green-600 drop-shadow-glow animate-fade-down animate-once"/>
         {/* </div> */}
 
         <div className="group text-center mt-10">

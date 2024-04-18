@@ -5,7 +5,7 @@ import Image from 'next/image'
 const LaptopImage = () => {
   return (
     <div>
-        <Image src={laptop} height={700} width={700}/>
+        <Image alt="laptop image" src={laptop} height={700} width={700}/>
     </div>
   )
 }
