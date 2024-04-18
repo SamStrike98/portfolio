@@ -1,113 +1,176 @@
-import Image from 'next/image'
+import Navbar from "@/components/Navbar"
+import ParticlesBackground from "@/components/ParticlesBackground"
+import Image from "next/image"
+import profilePhoto from '@/public/professionalPhoto.png'
+import runningPhoto from '@/public/running.jpg'
+import HeadingBtn from "@/components/HeadingBtn"
+import ProjectSection from "@/components/ProjectSection"
+import TechList from "@/components/TechList"
+import ToggleBox from "@/components/ToggleBox"
+import Footer from "@/components/Footer"
+import Box from "@/components/Box"
+
+
+const techList = [
+  {
+    id: 1,
+    title: 'GitHub',
+    img: '/github.svg',
+    alt: 'GitHub'
+  },
+  {
+    id: 2,
+    title: 'JavaScript',
+    img: '/javascript.svg',
+    alt: 'JavaScript'
+  },
+  {
+    id: 3,
+    title: 'React',
+    img: '/react.svg',
+    alt: 'React'
+  },
+  {
+    id: 4,
+    title: 'NextJS',
+    img: '/nextjs.svg',
+    alt: 'NextJS'
+  },
+  {
+    id: 5,
+    title: 'NodeJS',
+    img: '/nodejs.svg',
+    alt: 'NodeJS'
+  },
+  {
+    id: 6,
+    title: 'TailwindCSS',
+    img: '/tailwind.svg',
+    alt: 'TailwindCSS'
+  },
+  {
+    id: 7,
+    title: 'Bootstrap',
+    img: '/bootstrap.svg',
+    alt: 'Bootstrap'
+  },
+  {
+    id: 8,
+    title: 'WordPress',
+    img: '/wordpress.svg',
+    alt: 'WordPress'
+  },
+  
+]
+
+const experience = [
+  {
+    id: 1,
+    title: 'University of East Anglia',
+    dates: '2016-2019',
+    skills: '2:1 Mathematics Degree.'
+  },
+  {
+    id: 2,
+    title: 'Rose Builders',
+    dates: '2019-2022',
+    skills: 'Worked in accounts - helped with the introduction of new technology into the company.'
+  },
+  {
+    id: 3,
+    title: 'Essex Carers Network',
+    dates: '2022-',
+    skills: 'Helping populate WordPress Website & build spreadsheets on request.'
+  },
+]
+
+const text = 'Box'
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-black w-full overflow-hidden">
+
+      <Navbar />
+    
+      <section className='h-[95vh] w-full bg-black bg-opacity-75 overflow-hidden relative flex flex-col items-center'>
+
+      
+        
+        {/* <ParticlesBackground />  */}
+        <div className="absolute w-[80%] max-container h-full mt-20 top-0 mx-auto flex xl:flex-row flex-col justify-center items-center xl:justify-between">
+
+        {/* <div className="text-white bg-black rounded-full w-[200] h-[200]"> Test</div> */}
+
+        {/* <div className="border border-black h-[300px] w-[300px] bg-black"> */}
+            <Image src={profilePhoto} width={500} height={500} className="max-w-1/2 bg-gray-800 bg-opacity-45 rounded-lg ring-1 ring-green-600 drop-shadow-glow animate-fade-down animate-once"/>
+        {/* </div> */}
+
+        <div className="group text-center mt-10">
+          <h1 className="text-white text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl"> <span className='text-green-600 group-hover:text-white'>{'<'}</span><span className='group-hover:text-green-600'>Sam</span> Strike<span className='text-green-600 group-hover:text-white'>{' />'}</span></h1>
+          <p className="text-4xl text-white text-center group-hover:text-green-600 transition-colors"><span className="text-green-600 group-hover:text-white">Frontend</span> Web Developer</p>
         </div>
-      </div>
+        
+        
+        
+        {/* <div className="p-4 border border-black rounded-md bg-black">
+          
+           <h1 className="text-white">Hello</h1>
+          <div className="text-white">slkdfjlkdjfl;ksdjflskdjflskdjfl</div>
+        </div> */}
+          
+        </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="max-container ml-auto mt-20" id="about">
+        {/* <h1 className="text-white">About</h1> */}
+        <HeadingBtn text='About'/>
+        <Box />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        {/* <div className="w-5/6 p-2 rounded-md flex flex-row bg-gradient-to-r from-gray-600 via-green-500 to-green-600"> */}
+        <div className="w-5/6 p-2 rounded-md flex justify-center">
+          {/* <Image src={runningPhoto} width={300} height={300}/> */}
+          <div className=" p-3 rounded-md w-4/5">
+            <h3 className="text-white text-3xl">Aspiring <span className="text-green-600 font-semibold">Web Dev</span></h3>
+            <p className="text-white text-xl">
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+        
+        
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className="max-container mt-20" id="projects">
+        <HeadingBtn text='Projects'/>
+        <ProjectSection />
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section className="max-container flex flex-col items-center mt-20" id="projects">
+        <div className="flex flex-row gap-2">
+          <HeadingBtn text='Education'/>
+          <HeadingBtn text='Experience'/>
+        </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="flex flex-col justify-between  gap-5 w-[80%] lg:w-[50%]">
+          {
+            experience.map(item => (
+              <ToggleBox key={item.id} {...item} />
+            ))
+          }
+        </div>
+
+        
+      </section>
+
+      <section className="max-container flex flex-col items-center mt-20" id="tech">
+        <HeadingBtn text='Tech'/>
+        <p className="text-green-600 w-1/2 text-3xl">These are some of the <span className="text-white font-semibold">Technologies</span> that I have used:</p>
+        <TechList techList={techList}/>
+      </section>
+
+      
+    <Footer />
     </main>
   )
 }
