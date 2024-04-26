@@ -21,13 +21,13 @@ const ProjectCard = ({ title, image, description, mobileImage, techUsed}) => {
 
   return (
 
-    <div id={id} className={`overflow-hidden ${isOpen ? 'h-[550px] w-[80%] project_card' : 'project_card_reverse h-[50px] w-1/2 lg:w-1/3'} border border-white border-opacity-30 bg-gray-800 bg-opacity-45 rounded-md p-4 flex flex-col items-center mb-8 `}>
+    <div id={id} className={`overflow-hidden ${isOpen ? 'h-[550px] w-[80%] project_card' : 'project_card_reverse h-[50px] w-3/4 lg:w-1/3'} border border-white border-opacity-30 bg-gray-800 bg-opacity-45 rounded-md p-4 flex flex-col items-center mb-8 `}>
         {/* <div className='w-5/6 h-[500px]'>{isMobile ? <MobileImage /> : <LaptopImage />}</div> */}
         <div className={`w-full flex flex-row justify-between mb-4 ${isOpen ? '' : 'h-full items-center'}`}>
             <div>{''}</div>
 
             <div className='flex flex-col justify-center items-center'>
-              <h2 className={`transition-all duation-500 delay-1000 text-white font-extrabold ${isOpen ? 'text-2xl decoration-green-400 underline-offset-8' : 'text-lg lg:text-xl xl:text-2xl'}`}>{title}</h2>
+              <h2 className={`transition-all duation-500 delay-1000 text-white font-extrabold ${isOpen ? 'text-xl md:text-2xl decoration-green-400 underline-offset-8' : 'text-md lg:text-xl xl:text-2xl'}`}>{title}</h2>
               <div className={`border-b border-green-400 transition-[width] duration-500 delay-500  ${isOpen ? 'w-[80%]' : 'w-0'}`}>{''}</div>
             </div>
             

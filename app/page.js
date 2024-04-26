@@ -93,31 +93,20 @@ export default function Home() {
 
       <Navbar />
     
-      <section className='h-[95vh] w-full bg-black bg-opacity-75 overflow-hidden relative flex flex-col items-center'>
+      <section className='mt-20 w-full bg-black bg-opacity-75 flex flex-col items-center'>
 
       
         
         {/* <ParticlesBackground />  */}
-        <div className="absolute w-[80%] max-container h-full mt-20 top-0 mx-auto flex xl:flex-row flex-col justify-center items-center xl:justify-between">
+        <div className="w-[80%] max-container h-full mt-20 mx-auto flex xl:flex-row flex-col justify-center items-center xl:justify-between">
 
-        {/* <div className="text-white bg-black rounded-full w-[200] h-[200]"> Test</div> */}
-
-        {/* <div className="border border-black h-[300px] w-[300px] bg-black"> */}
             <Image alt="profile image" src={profilePhoto} width={500} height={500} className="max-w-1/2 bg-gray-800 bg-opacity-45 rounded-lg ring-1 ring-green-600 drop-shadow-glow animate-fade-down animate-once"/>
-        {/* </div> */}
 
         <div className="group text-center mt-10">
-          <h1 className="text-white text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl"> <span className='text-green-600 group-hover:text-white'>{'<'}</span><span className='group-hover:text-green-600'>Sam</span> Strike<span className='text-green-600 group-hover:text-white'>{' />'}</span></h1>
-          <p className="text-4xl text-white text-center group-hover:text-green-600 transition-colors"><span className="text-green-600 group-hover:text-white">Frontend</span> Web Developer</p>
+          <h1 className="text-white text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl"> <span className='text-green-600 group-hover:text-white'>{'<'}</span><span className='group-hover:text-green-600'>Sam</span> Strike<span className='text-green-600 group-hover:text-white'>{' />'}</span></h1>
+          <p className="text-4xl mt-5 text-white text-center group-hover:text-green-600 transition-colors"><span className="text-green-600 group-hover:text-white">Frontend</span> Web Developer</p>
         </div>
         
-        
-        
-        {/* <div className="p-4 border border-black rounded-md bg-black">
-          
-           <h1 className="text-white">Hello</h1>
-          <div className="text-white">slkdfjlkdjfl;ksdjflskdjflskdjfl</div>
-        </div> */}
           
         </div>
       </section>
