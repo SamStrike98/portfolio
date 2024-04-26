@@ -34,7 +34,7 @@ const Box = () => {
                 </ul>
                </section>
                <section className='h-5 my-2'>
-                  <ul className='ml-2 h-full flex flex-row gap-2 items-center font-semibold'>
+                  <ul className='ml-2 h-full flex flex-row gap-2 items-center font-semibold text-sm md:text-md overflow-y-scroll'>
                     <li>File</li>
                     <li>Home</li>
                     <li>Insert</li>
