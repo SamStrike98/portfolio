@@ -57,10 +57,10 @@ const Navbar = () => {
     </div>
    {isMenuOpen ? <nav>
             <ul className={`rounded-md bg-gray-800 border border-white border-opacity-30 w-[80%] max-container flex lg:hidden flex-col justify-evenly gap-3 text-white ${scrollPosition > 32 ? 'text-xl' : 'text-2xl'}`}>
-                <li className='w-full rounded-t-md p-5 cursor-pointer hover:bg-gray-600'>Home</li>
-                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'>Projects</li>
-                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'>Experience</li>
-                <li className='w-full rounded-b-md p-5 cursor-pointer hover:bg-gray-600'>About</li>
+                <li className='w-full rounded-t-md p-5 cursor-pointer hover:bg-gray-600'><Link href={'#home'}>Home</Link></li>
+                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'><Link href={'#projects'}>Projects</Link></li>
+                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'><Link href={'#experience'}>Experience</Link></li>
+                <li className='w-full rounded-b-md p-5 cursor-pointer hover:bg-gray-600'><Link href={'#about'}>About</Link></li>
             </ul>
         </nav> :
         ''
