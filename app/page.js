@@ -122,7 +122,7 @@ export default function Home() {
           <div className=" p-3 rounded-md w-4/5">
             <h3 className="text-white text-3xl">Aspiring <span className="text-green-600 font-semibold">Web Dev</span></h3>
             <p className="text-white text-xl">
-              My journey into building websites started during lockdown with the aim of challenging myself to learn something new. Having thoroughly enjoyed learning frontend website development in my spare time, I'm now looking to turn it into a career.
+              {"My journey into building websites started during lockdown with the aim of challenging myself to learn something new. Having thoroughly enjoyed learning frontend website development in my spare time, I'm now looking to turn it into a career."}
             </p>
           </div>
         </div>
