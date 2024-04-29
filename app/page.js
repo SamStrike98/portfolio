@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-container ml-auto mt-20" id="about">
+      <section className="max-container ml-auto mt-20 pt-[95px]" id="about" >
         {/* <h1 className="text-white">About</h1> */}
         <HeadingBtn text='About'/>
         <Box />
@@ -122,7 +122,7 @@ export default function Home() {
           <div className=" p-3 rounded-md w-4/5">
             <h3 className="text-white text-3xl">Aspiring <span className="text-green-600 font-semibold">Web Dev</span></h3>
             <p className="text-white text-xl">
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              My journey into building websites started during lockdown with the aim of challenging myself to learn something new. Having thoroughly enjoyed learning frontend website development in my spare time, I'm now looking to turn it into a career.
             </p>
           </div>
         </div>
@@ -130,12 +130,12 @@ export default function Home() {
         
       </section>
 
-      <section className="max-container mt-20" id="projects">
+      <section className="max-container mt-20 pt-[95px]  max-h-max" id="projects">
         <HeadingBtn text='Projects'/>
         <ProjectSection />
       </section>
 
-      <section className="max-container flex flex-col items-center mt-20" id="experience">
+      <section className="max-container flex flex-col items-center mt-20 pt-[95px]" id="experience">
         <div className="flex flex-row gap-2">
           <HeadingBtn text='Education'/>
           <HeadingBtn text='Experience'/>
@@ -152,7 +152,7 @@ export default function Home() {
         
       </section>
 
-      <section className="max-container flex flex-col items-center mt-20" id="tech">
+      <section className="max-container flex flex-col items-center mt-20 pt-[95px]" id="tech">
         <HeadingBtn text='Tech'/>
         <p className="text-green-600 w-1/2 text-3xl">These are some of the <span className="text-white font-semibold">Technologies</span> that I have used:</p>
         <TechList techList={techList}/>
