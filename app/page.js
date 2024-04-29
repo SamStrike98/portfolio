@@ -135,7 +135,7 @@ export default function Home() {
         <ProjectSection />
       </section>
 
-      <section className="max-container flex flex-col items-center mt-20" id="projects">
+      <section className="max-container flex flex-col items-center mt-20" id="experience">
         <div className="flex flex-row gap-2">
           <HeadingBtn text='Education'/>
           <HeadingBtn text='Experience'/>
