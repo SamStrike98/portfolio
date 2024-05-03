@@ -28,21 +28,21 @@ const projects = [
     title: 'Invoice Generator',
     image: '/invoice_generator.png',
     techUsed: ['HTML', 'CSS', 'JavaScript', 'PDFJS'],
-    description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
+    description: "While working for Essex Carers Network on a self-employed basis, I've needed to produce invoices. For the first few, I simply used online invoice generators but was always curious as to whether I could create my own. Overall, the project was quite simple; it just required some input fields and a way of generating a PDF. I wasn't familiar with how to do the second part, but Stack Overflow was very helpful and led me to find PDF.js, which had great documentation."
   },
     {
     id: 5,
     title: 'Weather App',
     image: '/weather_app.png',
     techUsed: ['HTML', 'CSS', 'JavaScript', 'WeatherAPI'],
-    description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
+    description: "This was the first project I built that consumes an API. In this case, it was a weather API that provided a three-day hourly forecast when given a Town, City, or Postcode of any location in the world. This project gave me a great understanding of fetching data and handling the JSON response."
   },
   {
     id: 6,
     title: 'Blog Website',
     image: '/blog.png',
     techUsed: ['ReactJS', 'NextJS', 'NodeJS', 'Strapi'],
-    description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
+    description: "For this project, I used Strapi (an open-source JavaScript-based headless CMS) as the 'backend'. This helped to further my experience with fetching, filtering, and displaying different types of data. On the frontend, I utilized Next.js, which allowed me to gain an understanding of Server-Side Rendering versus Client-Side Rendering and the effect this may have on performance."
   },
   {
     id: 7,

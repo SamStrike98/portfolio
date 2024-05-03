@@ -38,23 +38,23 @@ const ProjectCard = ({ title, image, description, mobileImage, techUsed}) => {
             { view === 'pc' ? <div className='w-5/6 h-[400px] overflow-hidden rounded-md'><Image alt={`${title} image`} onLoad={(e) => setImageHeight(e.target.clientHeight)} src={image} width={1000} height={1000} className={`transform hover:transform ${imageHeight > 400 ? 'hover:-translate-y-[calc(100%-400px)]' : ''} transition-transform duration-[5000ms] ease-linear`}/></div> : ''}
             { view === 'mobile' ? <div className='w-5/6 h-[400px] overflow-hidden'><Slider /></div> : ''}
             { view === 'info' ? <div className='w-5/6 h-[400px]'>
-                                  <h4 className='font-bold text-white mb-4 text-xl'>Tech Used:</h4>
-                                  <ul className='flex flex-row justify-evenly text-white mb-4 flex-wrap gap-3'>
+                                  <h4 className='font-bold text-white mb-2 sm:mb-4 text-xl'>Tech Used:</h4>
+                                  <ul className='flex flex-row justify-evenly text-white mb-4 flex-wrap gap-1 sm:gap-2 '>
                                     {techUsed.map(item => (
                                       <li key={item} className='bg-opacity-45 ring-2 ring-inset p-3 rounded-md ring-green-400 ring-opacity-65 mb-4 text-xs md:text-md lg:text-lg'>{item}</li>
                                     ))}
                                   </ul>
-                                  <h4 className='font-bold text-white mb-4 text-xl'>Description:</h4>
-                                  <div className=''>
-                                    <p className={`text-white text-sm leading-normal md:text-md md:leading-loose`}>{description}</p>
+                                  <h4 className='font-bold text-white mb-2 sm:mb-4 text-xl'>Description:</h4>
+                                  <div className='h-[200px] overflow-auto p-1'>
+                                    <p className={`text-white text-xs sm:text-sm leading-normal md:text-md md:leading-loose min-`}>{description}</p>
                                   </div>
                                   
                                 </div> : ''}
 
             <div className='w-full flex flex-row justify-evenly mt-3'>
-              <div className={`rounded-full bg-black ${view === 'pc' ? 'bg-opacity-45 ring-2 ring-inset ring-green-400 ring-opacity-65' : 'bg-opacity-0'} p-3 transition-opacity`}> <IoIosDesktop size={42} color='white' className='cursor-pointer' onClick={() => setView('pc')}/> </div> 
+              <div className={`rounded-full bg-black ${view === 'pc' ? 'bg-opacity-45 ring-2 ring-inset ring-green-400 ring-opacity-65' : 'bg-opacity-0'} p-3 transition-opacity`}> <IoIosDesktop size={35} color='white' className='cursor-pointer' onClick={() => setView('pc')}/> </div> 
               {mobileImage ? <div className={`rounded-full bg-black ${view === 'mobile' ? 'bg-opacity-45 ring-2 ring-inset ring-green-400 ring-opacity-65' : 'bg-opacity-0'} p-3 transition-opacity`}> <FaMobileAlt size={42} color='white' className='cursor-pointer' onClick={() => setView('mobile')}/> </div> : ''}
-              <div className={`rounded-full bg-black ${view === 'info' ? 'bg-opacity-45 ring-2 ring-inset ring-green-400 ring-opacity-65' : 'bg-opacity-0'} p-3 transition-opacity`}> <BsInfoLg size={42} color='white' className='cursor-pointer' onClick={() => setView('info')}/> </div>
+              <div className={`rounded-full bg-black ${view === 'info' ? 'bg-opacity-45 ring-2 ring-inset ring-green-400 ring-opacity-65' : 'bg-opacity-0'} p-3 transition-opacity`}> <BsInfoLg size={35} color='white' className='cursor-pointer' onClick={() => setView('info')}/> </div>
             </div>
         </div> 
     </div>

@@ -58,7 +58,7 @@ const Box = () => {
               </div>
             
             <div className='min-h-[920px] h-fit  w-full py-2  bg-gray-300'>
-              <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] mx-auto p-4 border border-opacity-35 border-black'>
+              <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] max-w-[700px] mx-auto p-4 border border-opacity-35 border-black'>
               <section className='my-4'>
                 <h2 className='font-extrabold text-2xl text-center'>Samuel Strike</h2>
                 <p className='text-xs text-right'>Home address: 22 Constable Close, Lawford, Manningtree, Essex, CO112LD</p>
@@ -92,20 +92,49 @@ const Box = () => {
                   <li><span className='font-bold'>AS</span>Mathematics (A), Further Mathematics (C), Further Mathematics (C), Physics (C), Chemistry (C)</li>
                 </ul>
                 <h4 className='font-bold'>GCSEs, Manningtree High School: 2009-2014</h4>
+                <ul className='list-disc text-sm p-4 mb-1'>
+                  <li><span className='font-bold'>3 A* grades -</span> Mathematics, Physics & Chemistry</li>
+                  <li><span className='font-bold'>5 A grades -</span> Statistics, English Literature, Geography, History, Biology</li>
+                  <li><span className='font-bold'>2 B grades -</span> English Language, IT</li>
+                </ul>
+                <p className='text-sm'>Including Decision Maths, working with algorithms, specifically Graph Theory, Network problems and Linear Programming.</p>
               </section>
               </div>
             </div>
 
             <div className='min-h-[920px] h-fit  w-full py-2  bg-gray-300'>
-            <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] mx-auto p-4 border border-opacity-35 border-black'>
+            <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] max-w-[700px] mx-auto p-4 border border-opacity-35 border-black'>
             <section className='my-4 p-4'>
               <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>Work Experience</h2>
               <ul className='list-disc text-sm p-4'>
-                <li><span className='font-bold'>Essex Carers Network</span></li>
-                <li><span className='font-bold'>Rose Builders</span></li>
-                <li><span className='font-bold'>Tasty Tubs</span></li>
-                <li><span className='font-bold'>East of England Cooperative Society</span></li>
-                <li><span className='font-bold'>Gateway Charity</span></li>
+                <li>
+                  <span className='font-bold'>Essex Carers Network</span>
+                  <p>WordPress website – updated information, created new pages as requested, helped with training and managed updates of both WordPress & plugins.</p>
+                </li>
+                <li>
+                    <span className='font-bold'>Rose Builders</span>
+                    <p>Accounts Assistant						
+                      Working mainly on the purchase ledger side, ensuring invoices are paid on time, I have gained a comprehensive knowledge of accounting and general office duties. I have also supported software upgrades within the accounts systems and often solved IT queries from colleagues.
+                    </p>
+                </li>
+
+                <h3 className='font-bold'>Student Jobs 2014-2019</h3>
+                <li>
+                  <span className='font-bold'>Tasty Tubs</span>
+                  <p>Factory operative
+                      Working in a small team completing a variety of roles to strict deadlines.
+                  </p>
+                </li>
+                <li>
+                  <span className='font-bold'>East of England Cooperative Society</span>
+                  <p>General assistant
+                      Working as a general assistant, dealing with customer needs and ensuring product presentation was to a high standard.
+                  </p>
+                </li>
+                <li>
+                  <span className='font-bold'>Gateway Charity</span>
+                  <p>•	Volunteer for Gateway charity for adults with learning disabilities supporting them to access social activities.</p>
+                </li>
               </ul>
             </section>
 

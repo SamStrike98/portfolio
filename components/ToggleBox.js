@@ -21,9 +21,9 @@ const ToggleBox = ({ title, dates, skills  }) => {
         
 
         {/* {isOpen ? <div className='flex flex-row justify-start mt-2'>{skills}</div> : ''} */}
-        <div className={`${isOpen ? 'max-h-52' : 'max-h-0'} ease-linear transition-[max-height] duration-500 flex flex-row justify-start mt-2 overflow-hidden font-light`}>{skills}</div>
+        <div className={`${isOpen ? 'max-h-96' : 'max-h-0'}  px-3  ease-linear transition-[max-height] duration-500 flex flex-row justify-start mt-2 overflow-hidden font-light`}>{skills}</div>
     </div>
   )
 }
-
+ 
 export default ToggleBox

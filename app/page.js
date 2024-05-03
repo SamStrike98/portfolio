@@ -68,19 +68,19 @@ const experience = [
     id: 1,
     title: 'University of East Anglia',
     dates: '2016-2019',
-    skills: '2:1 Mathematics Degree.'
+    skills: "I studied Maths for 3 years at University, graduating with a 2:1. I learned a range of topics from Number Theory to Fluid Dynamics; however, the module I gained the most from was problem-solving. The actual Maths concepts were simpler than other modules, but it required an element of planning and lateral thinking."
   },
   {
     id: 2,
     title: 'Rose Builders',
     dates: '2019-2022',
-    skills: 'Worked in accounts - helped with the introduction of new technology into the company.'
+    skills: "Having finished University, my first job was at Rose Builders, working in the accounts team. Working to strict monthly and yearly deadlines, I also assisted with the introduction of new technology into the company to help speed up a number of processes."
   },
   {
     id: 3,
     title: 'Essex Carers Network',
     dates: '2022-',
-    skills: 'Helping populate WordPress Website & build spreadsheets on request.'
+    skills: "At Essex Carers Network, I've worked on a variety of tasks, from helping to populate and keep their website up to date to building bespoke spreadsheets to increase efficiency and addressing general IT issues."
   },
 ]
 
