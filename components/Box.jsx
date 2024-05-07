@@ -61,16 +61,18 @@ const Box = () => {
               <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] max-w-[700px] mx-auto p-4 border border-opacity-35 border-black'>
               <section className='my-4'>
                 <h2 className='font-extrabold text-2xl text-center'>Samuel Strike</h2>
-                <p className='text-xs text-right'>Home address: 22 Constable Close, Lawford, Manningtree, Essex, CO112LD</p>
-                <p className='text-xs text-right'>Telephone: 01206390118</p>
-                <p className='text-xs text-right'>Mobile: 07895139154</p>
-                <p className='text-xs text-right'>E-mail: sam.strike1@btinternet.com</p>
-                <p className='text-xs text-right'>DOB: 02/01/1998</p>
+                <div className='mt-2 mr-3 text-right text-xs'>
+                  <p className=''>Home address: 22 Constable Close, Lawford, Manningtree, Essex, CO112LD</p>
+                  <p className=''>Telephone: 01206390118</p>
+                  <p className=''>Mobile: 07895139154</p>
+                  <p className=''>E-mail: <span className='text-blue-700'>sam.strike1@btinternet.com</span></p>
+                  <p className=''>DOB: 02/01/1998</p>
+                </div>
               </section>
 
               <section className='my-4 p-4'>
                 <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>Professional Profile</h2>
-                <p className='text-sm'>As a diligent and versatile Mathematics graduate, I possess a strong work ethic and excellent organisational skills. I approach tasks with confidence and attention to detail, ensuring that deadlines are met and projects are completed to the highest standard. I take pride in my punctuality and professional appearance, and am eager to continue learning and growing both personally and professionally.</p>
+                <p className='text-sm w-[90%] my-2'>As a diligent and versatile Mathematics graduate, I possess a strong work ethic and excellent organisational skills. I approach tasks with confidence and attention to detail, ensuring that deadlines are met and projects are completed to the highest standard. I take pride in my punctuality and professional appearance, and am eager to continue learning and growing both personally and professionally.</p>
               </section>
 
               <section className='my-4 p-4'>
@@ -85,11 +87,11 @@ const Box = () => {
 
               <section className='my-4 p-4'>
                 <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>Education</h2>
-                <h4 className='font-bold'>BSc (2:1) Mathematics, University of East Anglia: 2016-2019</h4>
+                <h4 className='font-bold mt-2'>BSc (2:1) Mathematics, University of East Anglia: 2016-2019</h4>
                 <h4 className='font-bold'>A-Levels, Colchester Sixth Form: 2014-2016</h4>
-                <ul className='list-disc text-sm p-4'>
-                  <li><span className='font-bold'>A2</span>Mathematics (A), Further Mathematics (D), Physics (C), Chemistry (D) and Extended Project Qualification (B)</li>
-                  <li><span className='font-bold'>AS</span>Mathematics (A), Further Mathematics (C), Further Mathematics (C), Physics (C), Chemistry (C)</li>
+                <ul className='list-disc text-sm p-4 w-[90%]'>
+                  <li className='my-2'><span className='font-bold'>A2</span> Mathematics (A), Further Mathematics (D), Physics (C), Chemistry (D) and Extended Project Qualification (B)</li>
+                  <li className='my-2'><span className='font-bold'>AS</span> Mathematics (A), Further Mathematics (C), Further Mathematics (C), Physics (C), Chemistry (C)</li>
                 </ul>
                 <h4 className='font-bold'>GCSEs, Manningtree High School: 2009-2014</h4>
                 <ul className='list-disc text-sm p-4 mb-1'>
@@ -97,7 +99,7 @@ const Box = () => {
                   <li><span className='font-bold'>5 A grades -</span> Statistics, English Literature, Geography, History, Biology</li>
                   <li><span className='font-bold'>2 B grades -</span> English Language, IT</li>
                 </ul>
-                <p className='text-sm'>Including Decision Maths, working with algorithms, specifically Graph Theory, Network problems and Linear Programming.</p>
+                <p className='text-sm w-[90%]'>Including Decision Maths, working with algorithms, specifically Graph Theory, Network problems and Linear Programming.</p>
               </section>
               </div>
             </div>
@@ -106,55 +108,52 @@ const Box = () => {
             <div className='bg-white min-h-[900px] h-fit  lg:w-[80%] md:w-[90%] w-[95%] max-w-[700px] mx-auto p-4 border border-opacity-35 border-black'>
             <section className='my-4 p-4'>
               <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>Work Experience</h2>
-              <ul className='list-disc text-sm p-4'>
-                <li>
-                  <span className='font-bold'>Essex Carers Network</span>
-                  <p>WordPress website – updated information, created new pages as requested, helped with training and managed updates of both WordPress & plugins.</p>
+              <ul className='list-disc text-sm p-4 w-[90%]'>
+                <li className='my-2'>
+                  <h4 className='font-bold text-md'>Essex Carers Network -</h4>
+                  <p className='text-sm'>WordPress website – updated information, created new pages as requested, helped with training and managed updates of both WordPress & plugins.</p>
                 </li>
-                <li>
-                    <span className='font-bold'>Rose Builders</span>
-                    <p>Accounts Assistant						
+                <li className='my-2'>
+                    <h4 className='font-bold'>Rose Builders -</h4>
+                    <p className='text-sm'>Accounts Assistant						
                       Working mainly on the purchase ledger side, ensuring invoices are paid on time, I have gained a comprehensive knowledge of accounting and general office duties. I have also supported software upgrades within the accounts systems and often solved IT queries from colleagues.
                     </p>
                 </li>
 
-                <h3 className='font-bold'>Student Jobs 2014-2019</h3>
-                <li>
-                  <span className='font-bold'>Tasty Tubs</span>
-                  <p>Factory operative
+                <h3 className='font-bold mt-2 text-lg underline'>Student Jobs 2014-2019</h3>
+                <li className='my-2'>
+                  <h4 className='font-bold'>Tasty Tubs -</h4>
+                  <p className='text-sm'>Factory operative
                       Working in a small team completing a variety of roles to strict deadlines.
                   </p>
                 </li>
-                <li>
-                  <span className='font-bold'>East of England Cooperative Society</span>
-                  <p>General assistant
+                <li className='my-2'>
+                  <h4 className='font-bold'>East of England Cooperative Society -</h4>
+                  <p className='text-sm'>General assistant
                       Working as a general assistant, dealing with customer needs and ensuring product presentation was to a high standard.
                   </p>
                 </li>
-                <li>
-                  <span className='font-bold'>Gateway Charity</span>
-                  <p>•	Volunteer for Gateway charity for adults with learning disabilities supporting them to access social activities.</p>
+                <li className='my-2'>
+                  <h4 className='font-bold'>Gateway Charity -</h4>
+                  <p className='text-sm'>Volunteer for Gateway charity for adults with learning disabilities supporting them to access social activities.</p>
                 </li>
               </ul>
             </section>
 
             <section className='my-4 p-4'>
               <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>IT Skills</h2>
-              <ul class="list-disc text-sm p-4">
-                <li>Proficient in front-end technologies including HTML, CSS, JavaScript and ReactJS, and back-end technologies such as PHP, Python and NodeJS</li>
-                <li>Completed several courses in programming languages</li>
-                <li>Developed and maintained several custom WordPress themes</li>
-                <li>Currently learning WordPress Plugin development</li>
-                <li>Experienced in working with popular WordPress plugins such as Elementor, WooCommerce, and Advanced Custom Fields, and integrating custom functionality with them</li>
-                <li>Strong understanding of WordPress query and database management</li>
-                <li>Knowledgeable in SEO best practices and have implemented various optimisation techniques on WordPress websites</li>
-                <li>I am currently working on two personal website projects</li>
+              <ul class="list-disc text-sm p-4 w-[90%]">
+                <li className='my-2'>Proficient in front-end technologies including HTML, CSS, JavaScript and ReactJS, and back-end technologies such as PHP, Python and NodeJS</li>
+                <li className='my-2'>Completed several courses in programming languages</li>
+                <li className='my-2'>Currently learning WordPress Theme & Plugin development</li>
+                <li className='my-2'>Experienced in working with popular WordPress plugins such as Elementor, WooCommerce, and Advanced Custom Fields, and integrating custom functionality with them</li>
+                <li className='my-2'>Knowledgeable in SEO best practices and have implemented various optimisation techniques.</li>
               </ul>
             </section>
 
             <section className='my-4 p-4'>
               <h2 className='text-lg font-bold border-b-2 border-black w-[90%]'>Personal Profile</h2>
-              <p className='text-sm'>I am deeply passionate about sports, and have participated in competitive and recreational activities such as football, powerlifting, and running. In addition to sports, I also find great pleasure in reading and challenging myself to expand my knowledge in emerging technologies.</p>
+              <p className='text-sm w-[90%] my-2'>I am deeply passionate about sports, and have participated in competitive and recreational activities such as football, powerlifting, and running. In addition to sports, I also find great pleasure in reading and challenging myself to expand my knowledge in emerging technologies.</p>
             </section>
             </div>
             </div>
