@@ -40,7 +40,7 @@ const projects = [
   {
     id: 6,
     title: 'Blog Website',
-    image: '/blog.png',
+    image: '/football_blog.png',
     techUsed: ['ReactJS', 'NextJS', 'NodeJS', 'Strapi'],
     description: "For this project, I used Strapi (an open-source JavaScript-based headless CMS) as the 'backend'. This helped to further my experience with fetching, filtering, and displaying different types of data. On the frontend, I utilized Next.js, which allowed me to gain an understanding of Server-Side Rendering versus Client-Side Rendering and the effect this may have on performance."
   },
@@ -49,7 +49,7 @@ const projects = [
     title: 'The Trainer Experts',
     image: '/the_trainer_experts.png',
     techUsed: ['HTML', 'CSS', 'JavaScript'],
-    description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
+    description: "The main aim of this project was to plan out the design and structure before starting to build it. Additionally, I thought it would be interesting to develop an e-commerce-style project."
   },
   // {
   //   id: 8,
