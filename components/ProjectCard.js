@@ -5,13 +5,11 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { IoIosDesktop } from "react-icons/io";
 import { FaMobileAlt } from "react-icons/fa";
-import MobileImage from './MobileImage';
-import LaptopImage from './LaptopImage';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { BsInfoLg } from "react-icons/bs";
-import Link from 'next/link';
-import Slider from './Slider';
+
+
 
 const ProjectCard = ({ title, image, description, mobileImage, techUsed}) => {
     const [view, setView] = useState('pc')
@@ -22,7 +20,6 @@ const ProjectCard = ({ title, image, description, mobileImage, techUsed}) => {
   return (
 
     <div id={id} className={`overflow-hidden ${isOpen ? 'h-[550px] w-[80%] project_card' : 'project_card_reverse h-[50px] w-3/4 lg:w-1/3'} border border-white border-opacity-30 bg-gray-800 bg-opacity-45 rounded-md p-4 flex flex-col items-center mb-8 `}>
-        {/* <div className='w-5/6 h-[500px]'>{isMobile ? <MobileImage /> : <LaptopImage />}</div> */}
         <div className={`w-full flex flex-row justify-between mb-4 ${isOpen ? '' : 'h-full items-center'}`}>
             <div>{''}</div>
 
@@ -36,7 +33,6 @@ const ProjectCard = ({ title, image, description, mobileImage, techUsed}) => {
 
         <div className={`flex flex-col items-center`}>
             { view === 'pc' ? <div className='w-5/6 h-[400px] overflow-hidden rounded-md'><Image alt={`${title} image`} onLoad={(e) => setImageHeight(e.target.clientHeight)} src={image} width={1000} height={1000} className={`transform hover:transform ${imageHeight > 400 ? 'hover:-translate-y-[calc(100%-400px)]' : ''} transition-transform duration-[5000ms] ease-linear`}/></div> : ''}
-            { view === 'mobile' ? <div className='w-5/6 h-[400px] overflow-hidden'><Slider /></div> : ''}
             { view === 'info' ? <div className='w-5/6 h-[400px]'>
                                   <h4 className='font-bold text-white mb-2 sm:mb-4 text-xl'>Tech Used:</h4>
                                   <ul className='flex flex-row justify-evenly text-white mb-4 flex-wrap gap-1 sm:gap-2 '>

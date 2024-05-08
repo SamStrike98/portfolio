@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
-import TechItem from './TechItem';
 import Link from 'next/link';
 
 const navItems = [

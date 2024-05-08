@@ -51,13 +51,6 @@ const projects = [
     techUsed: ['HTML', 'CSS', 'JavaScript'],
     description: "The main aim of this project was to plan out the design and structure before starting to build it. Additionally, I thought it would be interesting to develop an e-commerce-style project."
   },
-  // {
-  //   id: 8,
-  //   title: 'Races Near Me',
-  //   image: '/harmonford_marathon_pc.png',
-  //   techUsed: ['NextJS', 'ReactJS', 'NodeJS', 'TailwindCSS', 'Strapi'],
-  //   description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate. This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
-  // },
 ]
 
 const ProjectSection = () => {

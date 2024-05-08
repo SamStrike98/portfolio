@@ -7,7 +7,7 @@ import { FaFont, FaMicrophone, FaToggleOn, FaRegSave, FaUndo, FaRedo } from "rea
 import { ImParagraphCenter } from "react-icons/im";
 import { SlMagnifier } from "react-icons/sl";
 import { SiMicrosoftword } from "react-icons/si";
-import Link from 'next/link';
+
 
 
 const Box = () => {
