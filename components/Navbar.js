@@ -56,10 +56,11 @@ const Navbar = () => {
     </div>
    {isMenuOpen ? <nav>
             <ul className={`rounded-md bg-gray-800 border border-white border-opacity-30 w-[80%] max-container flex lg:hidden flex-col justify-evenly gap-3 text-white ${scrollPosition > 32 ? 'text-xl' : 'text-2xl'}`}>
-                <li className='w-full rounded-t-md p-5 cursor-pointer hover:bg-gray-600'><Link href={'#home'}>Home</Link></li>
-                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'><Link href={'#projects'}>Projects</Link></li>
-                <li className='w-full p-5 cursor-pointer hover:bg-gray-600'><Link href={'#experience'}>Experience</Link></li>
-                <li className='w-full rounded-b-md p-5 cursor-pointer hover:bg-gray-600'><Link href={'#about'}>About</Link></li>
+                <Link className='w-full rounded-t-md p-5 cursor-pointer hover:bg-gray-600' href={'#home'} onClick={()  => setIsMenuOpen(false)}>Home</Link>
+                <Link className='w-full p-5 cursor-pointer hover:bg-gray-600' href={'#about'} onClick={()  => setIsMenuOpen(false)}>About</Link>
+                <Link className='w-full p-5 cursor-pointer hover:bg-gray-600' href={'#projects'} onClick={()  => setIsMenuOpen(false)}>Projects</Link>
+                <Link className='w-full p-5 cursor-pointer hover:bg-gray-600' href={'#experience'} onClick={()  => setIsMenuOpen(false)}>Experience</Link>
+                <Link className='w-full rounded-b-md p-5 cursor-pointer hover:bg-gray-600' href={'#tech'} onClick={()  => setIsMenuOpen(false)}>Tech</Link>
             </ul>
         </nav> :
         ''
