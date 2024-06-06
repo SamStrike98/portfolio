@@ -51,6 +51,13 @@ const projects = [
     techUsed: ['HTML', 'CSS', 'JavaScript'],
     description: "The main aim of this project was to plan out the design and structure before starting to build it. Additionally, I thought it would be interesting to develop an e-commerce-style project."
   },
+  {
+    id: 8,
+    title: 'Harmonford Estates',
+    image: '/harmonford_estates.png',
+    techUsed: ['ReactJS', 'NextJS', 'Strapi', 'TailwindCSS', 'DaisyUI'],
+    description: "Using Strapi as a headless CMS, this project allowed me to practice key skills such as fetching data, filtering data, pagination, and error handling."
+  }
 ]
 
 const ProjectSection = () => {
