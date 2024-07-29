@@ -44,9 +44,9 @@ const ProjectCard = ({ title, image, description, mobileImage, techUsed, repo, l
           <h4 className='font-bold text-white mb-2 sm:mb-4 text-xl'>Description:</h4>
           <div className='h-[200px] overflow-auto p-1'>
             <p className={`text-white text-xs sm:text-sm leading-normal md:text-md md:leading-loose min-`}>{description}</p>
-            {repo !== '' && liveSite !== '' && <ul className='flex flex-row justify-evenly'>
-              {repo !== '' && <li className='font-bold text-green-400'><Link href={repo}>Repo</Link></li>}
-              {liveSite !== '' && <li className='font-bold text-green-400'><Link href={liveSite}>Live Site</Link></li>}
+            {repo !== '' && liveSite !== '' && <ul className='flex flex-row justify-evenly mt-10'>
+              {repo !== '' && <li className='font-bold text-green-400 text-xl'><a href={repo} target="_blank" rel="noopener noreferrer">Repo</a></li>}
+              {liveSite !== '' && <li className='font-bold text-green-400 text-xl'><a href={liveSite} target="_blank" rel="noopener noreferrer">Live Site</a></li>}
             </ul>
             }
           </div>
