@@ -16,21 +16,21 @@ const projects = [
     techUsed: ['NextJS', 'ReactJS', 'NodeJS', 'TailwindCSS'],
     description: 'This was the first website I built whilst learning NextJS - the official LFC website has a fairly simple design but with some interesting features to recreate.'
   },
-    {
+  {
     id: 3,
     title: 'CSS Visualised',
     image: '/css_visualised.png',
     techUsed: ['HTML', 'CSS', 'JavaScript'],
     description: 'This website serves as a visual guide for understanding the flexbox and box shadow CSS properties, which are often challenging to grasp. Being able to toggle the values and observe the changes proved very helpful. Additionally, I added a drawing function (a basic version of paint). This was a result of me learning mouse events at the time, making the project a practical application of the concepts I was learning.'
   },
-    {
+  {
     id: 4,
     title: 'Invoice Generator',
     image: '/invoice_generator.png',
     techUsed: ['HTML', 'CSS', 'JavaScript', 'PDFJS'],
     description: "While working for Essex Carers Network on a self-employed basis, I've needed to produce invoices. For the first few, I simply used online invoice generators but was always curious as to whether I could create my own. Overall, the project was quite simple; it just required some input fields and a way of generating a PDF. I wasn't familiar with how to do the second part, but Stack Overflow was very helpful and led me to find PDF.js, which had great documentation."
   },
-    {
+  {
     id: 5,
     title: 'Weather App',
     image: '/weather_app.png',
@@ -57,15 +57,22 @@ const projects = [
     image: '/harmonford_estates.png',
     techUsed: ['ReactJS', 'NextJS', 'Strapi', 'TailwindCSS', 'DaisyUI'],
     description: "Using Strapi as a headless CMS, this project allowed me to practice key skills such as fetching data, filtering data, pagination, and error handling."
-  }
+  },
+  {
+    id: 9,
+    title: 'Gifts By Breed',
+    image: '/gifts_by_breed.png',
+    techUsed: ['ReactJS', 'NextJS', 'TailwindCSS', 'MongoDB', 'Auth.js', 'Stripe'],
+    description: "This is the most complete project I've built to date, incorporating NextJS and TailwindCSS on the frontend, connecting via an API to a MongoDB database, and also making use of the Stripe API to collect payments and AuthJS for authentication and authorisation."
+  },
 ]
 
 const ProjectSection = () => {
   return (
     <div className='flex flex-col lg:flex-row w-full items-center lg:items-start lg:justify-evenly flex-wrap gap-4'>
-        {projects.map(project => (
-          <ProjectCard key={project.id} title={project.title} image={project.image} description={project.description} id={project.id} techUsed={project.techUsed}/>
-        ))}
+      {projects.map(project => (
+        <ProjectCard key={project.id} title={project.title} image={project.image} description={project.description} id={project.id} techUsed={project.techUsed} />
+      ))}
     </div>
   )
 }
