@@ -78,8 +78,8 @@ const projects = [
     id: 9,
     title: 'Gifts By Breed',
     image: '/gifts_by_breed.png',
-    techUsed: ['ReactJS', 'NextJS', 'TailwindCSS', 'MongoDB', 'Auth.js', 'Stripe'],
-    description: "This is the most complete project I've built to date, incorporating NextJS and TailwindCSS on the frontend, connecting via an API to a MongoDB database, and also making use of the Stripe API to collect payments and AuthJS for authentication and authorisation.",
+    techUsed: ['NextJS', 'Auth.js', 'Stripe', 'TailwindCSS', 'MongoDB'],
+    description: "Incorporating NextJS and TailwindCSS on the frontend, connecting via an API to a MongoDB database, and also making use of the Stripe API to collect payments and AuthJS for authentication and authorisation.",
     repo: 'https://github.com/SamStrike98/gifts-by-breed',
     liveSite: 'https://gifts-by-breed.vercel.app/'
   },
